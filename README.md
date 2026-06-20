@@ -1,338 +1,129 @@
-\# Amazon Delivery Analytics
+# 📦 Amazon Delivery Analytics
 
+## 📌 Project Overview
 
+This project presents an end-to-end Data Analytics solution based on Amazon delivery operations. The objective was to identify the factors affecting delivery performance, build interactive dashboards, perform statistical analysis, and develop predictive machine learning models.
 
-\## Project Overview
+---
 
+## 🎯 Business Problem
 
+The company aims to understand which operational factors increase delivery time and how delivery efficiency can be improved.
 
-This project analyzes Amazon delivery operations using SQL, Python, Power BI, and Machine Learning.
+The analysis answers questions such as:
 
+- Does traffic significantly affect delivery time?
+- Which weather conditions slow deliveries?
+- Which vehicle performs best?
+- How does delivery performance change during the day?
+- Can delivery time be predicted using machine learning?
 
+---
 
-The objective is to identify the main factors affecting delivery time, perform statistical analysis, build predictive models, and generate business recommendations for improving delivery performance.
+## 🛠 Technologies Used
 
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- SQL
+- Power BI
+- Scikit-learn
+- Statistical Analysis
 
+---
 
-\---
-
-
-
-\## Business Problem
-
-
-
-Delivery time directly impacts customer satisfaction and operational costs.
-
-
-
-This project investigates:
-
-
-
-\- Which factors increase delivery time
-
-\- Impact of traffic conditions
-
-\- Impact of weather
-
-\- Delivery performance by hour
-
-\- Delivery performance by weekday
-
-\- Feature importance using Machine Learning
-
-
-
-\---
-
-
-
-\## Dataset
-
-
-
-Amazon Delivery Dataset
-
-
-
-Records: 43,492
-
-
-
-Features include:
-
-
-
-\- Agent Age
-
-\- Agent Rating
-
-\- Weather
-
-\- Traffic
-
-\- Vehicle
-
-\- Area
-
-\- Category
-
-\- Distance
-
-\- Preparation Time
-
-\- Delivery Time
-
-
-
-\---
-
-
-
-\## Technologies Used
-
-
-
-\- Python
-
-\- Pandas
-
-\- NumPy
-
-\- Matplotlib
-
-\- Seaborn
-
-\- SciPy
-
-\- Scikit-Learn
-
-\- SQL
-
-\- Power BI
-
-
-
-\---
-
-
-
-\## Project Structure
-
-
+## 📂 Project Structure
 
 ```
-
-Amazon-delivery-analytics/
-
-
-
-│
-
-├── Data/
-
-├── Python/
-
-├── SQL/
-
-├── PowerBI/
-
-├── Images/
-
-├── Docs/
-
-├── README.md
-
-└── requirements.txt
-
+Data/
+Docs/
+Images/
+PowerBI/
+Python/
+SQL/
+README.md
+requirements.txt
 ```
 
+---
 
+## 📊 Exploratory Data Analysis
 
-\---
+The project includes:
 
+- Data cleaning
+- Missing value handling
+- Feature engineering
+- Correlation analysis
+- Delivery time distribution
+- Traffic analysis
+- Weather analysis
+- Vehicle analysis
+- Hourly analysis
+- Feature relationship analysis
 
+---
 
-\## Exploratory Data Analysis
+## 📈 Statistical Analysis
 
+Statistical hypothesis testing was performed to determine whether traffic conditions significantly influence delivery time.
 
+Methods:
 
-Performed:
+- ANOVA Test
+- Correlation Analysis
 
+---
 
+## 🤖 Machine Learning
 
-\- Data Cleaning
+Two regression models were developed:
 
-\- Missing Value Handling
+- Linear Regression
+- Random Forest Regressor
 
-\- Feature Engineering
+### Results
 
-\- Correlation Analysis
-
-\- Outlier Detection
-
-\- Distance Calculation (Haversine Formula)
-
-
-
-Visualizations:
-
-
-
-\- Delivery Time Distribution
-
-\- Traffic Analysis
-
-\- Weather Analysis
-
-\- Distance vs Delivery Time
-
-\- Orders by Hour
-
-\- Delivery Time by Hour
-
-\- Delivery Time by Weekday
-
-
-
-\---
-
-
-
-\## Statistical Analysis
-
-
-
-Performed ANOVA tests for:
-
-
-
-\- Traffic
-
-\- Weather
-
-\- Vehicle Type
-
-
-
-Results showed statistically significant differences between groups.
-
-
-
-\---
-
-
-
-\## Machine Learning
-
-
-
-Models:
-
-
-
-\- Linear Regression
-
-\- Random Forest Regressor
-
-
-
-Model Comparison
-
-
-
-| Model | R² |
-
-|------|------|
-
+| Model | R² Score |
+|--------|----------|
 | Linear Regression | 0.29 |
-
 | Random Forest | 0.80 |
 
+Random Forest achieved the highest predictive performance.
 
+---
 
-Random Forest significantly outperformed Linear Regression.
+## 📊 Power BI Dashboard
 
+The interactive dashboard includes:
 
+- KPI Cards
+- Traffic Analysis
+- Weather Analysis
+- Vehicle Analysis
+- Hourly Analysis
+- Correlation Analysis
+- Interactive Filters
 
-\---
+---
 
+## 📈 Key Business Insights
 
+- Heavy traffic significantly increases delivery time.
+- Sunny weather produces the fastest deliveries.
+- Scooters demonstrate the best delivery performance.
+- Evening hours generate the highest operational workload.
+- Distance strongly influences delivery duration.
+- Random Forest provides accurate delivery time predictions.
 
-\## Feature Importance
+---
 
-
-
-Most important predictors:
-
-
-
-1\. Category
-
-2\. Agent Rating
-
-3\. Weather
-
-4\. Distance
-
-5\. Agent Age
-
-
-
-\---
-
-
-
-\## Business Insights
-
-
-
-\- Heavy traffic significantly increases delivery time.
-
-\- Weather conditions affect delivery efficiency.
-
-\- Longer distances increase delivery duration.
-
-\- Evening hours experience the longest deliveries.
-
-\- Random Forest provides accurate delivery time prediction.
-
-
-
-\---
-
-
-
-\## Business Recommendations
-
-
-
-\- Optimize routes during traffic peaks.
-
-\- Improve courier assignment.
-
-\- Consider weather forecasts when planning deliveries.
-
-\- Use predictive models for ETA estimation.
-
-
-
-\---
-
-
-
-\## Author
-
-
+## 👨‍💻 Author
 
 Abdulla Kazimli
 
-
-
 Junior Data Analyst
 
-
-
 Baku, Azerbaijan
-
